@@ -3,7 +3,7 @@
 
 An example of a API Connected application. The application utilizes the [OpenWeatherMap](https://openweathermap.org/api) API.
 
-**Live:** []()
+**Live:** [https://alex-miarowski.github.io/weather-app/](https://alex-miarowski.github.io/weather-app/)
 
 ___
 
