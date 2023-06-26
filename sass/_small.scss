@@ -1,0 +1,23 @@
+@use './colors' as colors;
+
+@media (min-width: 568px) {
+	.wrapper {
+		justify-content: center;
+		height: 568px;
+		border-radius: 30px;
+		box-shadow: -2px -2px 20px colors.$wrapper-shadow;
+	}
+
+	.center {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin: 1em;
+	}
+
+	.additional-info {
+		height: 100%;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}

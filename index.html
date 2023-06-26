@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/79445b9466.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="app-title">Weather App</h1>
+        <div class="search-box">
+            <input class="search-box__input" type="text" placeholder="City name">
+            <button class="search-box__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <p class="search-box__warning not-visible"></p>
+        </div>
+        <div class="center">
+            <div class="main-info">
+                <h3 class="main-info__city-name">City</h3>
+                <img class="main-info__weather-img" src="./img/unknown.png" alt="A picture depicting today's weather.">
+                <p class="main-info__weather-description">---</p>
+                <p class="main-info__temperature">℃</p>
+                <p class="main-info__feels-like-text">Feels like <span
+                        class="main-info__feels-like-temperature">℃</span>
+                </p>
+            </div>
+            <div class="additional-info">
+                <div class="additional-info__humidity-box">
+                    <p class="additional-info__humidity-text">Humidity</p>
+                    <p class="additional-info__humidity">%</p>
+                </div>
+                <div class="additional-info__wind-box">
+                    <p class="additional-info__wind-text">Wind</p>
+                    <p class="additional-info__wind">m/s</p>
+                </div>
+                <div class="additional-info__pressure-box">
+                    <p class="additional-info__pressure-text">Pressure</p>
+                    <p class="additional-info__pressure">hPa</p>
+                </div>
+            </div>
+        </div>
+        <div class="next-three-days-weather">
+            <div class="next-three-days-weather__day-box">
+                <p class="next-three-days-weather__day-name">MON</p>
+                <img class="next-three-days-weather__weather-img" src="./img/unknown.png"
+                    alt="A picture depicting tomorrow's weather.">
+                <p class="next-three-days-weather__temperature">℃</p>
+            </div>
+            <div class="next-three-days-weather__day-box">
+                <p class="next-three-days-weather__day-name">TUE</p>
+                <img class="next-three-days-weather__weather-img" src="./img/unknown.png"
+                    alt="A picture depicting tomorrow's weather.">
+                <p class="next-three-days-weather__temperature">℃</p>
+            </div>
+            <div class="next-three-days-weather__day-box">
+                <p class="next-three-days-weather__day-name">WED</p>
+                <img class="next-three-days-weather__weather-img" src="./img/unknown.png"
+                    alt="A picture describing the weather in two days.">
+                <p class="next-three-days-weather__temperature">℃</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
